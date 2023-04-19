@@ -1,5 +1,4 @@
 import React from "react";
-import "./navBar.css";
 import { Link } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 import logoTienda from "../../img/logoTienda.png";
@@ -27,7 +26,7 @@ export const NavBar = () => {
             <Link to="/productos/Higuiene y Belleza">Higuiene y Belleza</Link>
             <Link to="/productos/Juguetes y Entretenimiento">Juguetes y Entretenimiento</Link>
             <Link to="/productos/Camas y Estar">Camas y Estar</Link>
-            <Link to="/counter">Contador</Link>
+            {/* <Link to="/counter">Contador</Link> */}
             <Link to="/cart"><CartWidget/></Link>
             
 

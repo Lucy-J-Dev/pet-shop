@@ -20,7 +20,7 @@ export const ItemCount = () => {
 
     return (
         <>
-            <h4>Agregar al Carrito: {counter}</h4>
+            <h4>Cantidad: {counter}</h4>
             <div>
                 <button onClick={sumar}>➕</button>
                 <button onClick={restar}>➖</button>
