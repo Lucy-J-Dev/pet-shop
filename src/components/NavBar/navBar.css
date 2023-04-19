@@ -6,6 +6,10 @@ nav {
     background-color: #ffe4c4;
 }
 
+.link {
+    color: #ff69b4;
+    text-decoration: none;
+}
 /* nav ul li {
     list-style-type: none;
     display: inline-block;
