@@ -9,13 +9,13 @@ export const NavBar = () => {
     return (
         <nav>
             <div className="contenedor-logo-imagen">
-                <a href="./index.html">
+                {/* <a href="./index.html"> */}
                     <img
                         className="logo-imagen"
                         src={logoTienda}
                         alt="Imagen principal"
                     />
-                </a>
+                {/* </a> */}
                 <div>
                     <h2 className="logo logo-espacio">PetShop</h2>
                     <span className="estilo-marca-logo">cuidados con amor</span>
@@ -23,7 +23,6 @@ export const NavBar = () => {
             </div>
 
             <Link to="/">Inicio</Link>
-            <Link to="/">Quienes somos</Link>
             <Link to="/productos/Alimentos y Snacks">Alimentos y Snacks</Link>
             <Link to="/productos/Higuiene y Belleza">Higuiene y Belleza</Link>
             <Link to="/productos/Juguetes y Entretenimiento">Juguetes y Entretenimiento</Link>
