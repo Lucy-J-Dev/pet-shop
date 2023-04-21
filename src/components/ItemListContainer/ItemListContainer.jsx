@@ -1,42 +1,38 @@
-import React, { useEffect,useState } from 'react';
-import {ImSpinner} from 'react-icons/im'
+import React, { useEffect, useState } from "react";
+import Spinner from "react-bootstrap/Spinner";
 import { pedirProductos } from "../../helpers/pedirProductos";
 import { ItemList } from "../ItemList/ItemList";
 import "./ItemListContainer.css";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 
-export const ItemListContainer = ({greating}) => {
+export const ItemListContainer = () => {
+    const [items, setItems] = useState([]);
 
-    const [items, setItems] =useState ([])
+    const [loading, setLoading] = useState(false);
 
-    const [loading, setLoading] =useState (false)
+    const { categoryId } = useParams();
 
-    const {categoryId} = useParams()
-    
-
-    useEffect(() =>{
-
-        setLoading(true)
+    useEffect(() => {
+        setLoading(true);
         pedirProductos()
-        .then((res) =>{
-            if (categoryId){
-                setItems(res.filter(prod => prod.category === categoryId))
-            }else{
-                setItems(res)
-            }
-            // console.log(res)
-        })
-        .catch((error)=> console.log (error))
-        .finally(()=>{setLoading(false)})
-    }, [categoryId])
+            .then((res) => {
+                const products = categoryId 
+                    ? res.filter((product) => product.categoria === categoryId) 
+                    : res;
+                setItems(products);
+            })
+            .catch((error) => console.log(error))
+            .finally(() => {
+                setLoading(false);
+            });
+    }, [categoryId]);
 
     return (
         <>
-        {
-            loading
-            ?<ImSpinner/>     
-            :<ItemList productos={items}/>
-        }            
+            { loading 
+                ? (<Spinner animation="border" />) 
+                : (<ItemList productos={items} />)
+            }
         </>
-    )}  
-     
+    );
+};

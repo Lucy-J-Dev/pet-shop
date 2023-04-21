@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { pedirProductos } from "../../helpers/pedirProductos";
-import { ImSpinner } from "react-icons/im";
-import {ItemDetail} from "../ItemDetail/ItemDetail"
+import Spinner from "react-bootstrap/Spinner";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = () => {
@@ -9,27 +9,27 @@ export const ItemDetailContainer = () => {
 
     const [loading, setLoading] = useState(false);
 
-    const {itemId} = useParams() 
+    const { itemId } = useParams();
 
     useEffect(() => {
         setLoading(true);
         pedirProductos()
-            .then(res =>{
-               setItem (res.find( prod => prod.id === Number(itemId)))
+            .then((res) => {
+                setItem(res.find((prod) => prod.id === Number(itemId)));
             })
             .catch((error) => console.log(error))
             .finally(() => {
                 setLoading(false);
             });
-    },[itemId]);
+    }, [itemId]);
 
     return (
-        <section>            
-            {            
-            loading
-            ?<ImSpinner/>
-            :<ItemDetail {...item}/>        
-            }           
+        <section>
+            {loading ? (
+                <Spinner animation="border" />
+            ) : (
+                <ItemDetail {...item} />
+            )}
         </section>
-    ) 
+    );
 };

@@ -1,13 +1,16 @@
-.botones {
-    margin: 10px;   
+.btn {
+     margin-inline: 20px; 
+     background-color: #ff69b4; 
+     color: rgb(36, 129, 206) 
 }
 
-h4 {
+h5 {
     text-align: center;
 }
 
 div{
     text-align: center;
+        
 }
 
 

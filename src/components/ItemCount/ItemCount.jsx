@@ -1,30 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./ItemCount.css";
+import Button from "react-bootstrap/Button";
 
 export const ItemCount = () => {
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(1);
 
     const sumar = () => {
-        setCounter(counter + 1);
+        if (counter < 100) {
+            setCounter(counter + 1);
+        }
     };
-    
+
     const restar = () => {
-        if (counter > 0) {
+        if (counter > 1) {
             setCounter(counter - 1);
         }
     };
 
-    const resetear = () => {
-        setCounter(0);
-    };
-
     return (
         <>
-            <h4>Cantidad: {counter}</h4>
+            <h5>Cantidad: {counter}</h5>
             <div>
-                <button onClick={sumar}>➕</button>
-                <button onClick={restar}>➖</button>
-                <button onClick={resetear}>🔄</button>
+                <Button className="btn" variant="primary" onClick={sumar}>
+                    +
+                </Button>{" "}
+                <Button className="btn" variant="primary" onClick={restar}>
+                    -
+                </Button>{" "}
             </div>
         </>
     );
