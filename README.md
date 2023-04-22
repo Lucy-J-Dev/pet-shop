@@ -11,4 +11,6 @@
 2. Se configuro las rutas a *ItemListContainer* e *ItemDetailContainer*
 
 
+3. Gif de la pagina Web
 
+![Gif de Pagina Web](./assets/PreEntrega2Jimenez.gif)
