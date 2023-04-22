@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { ItemCount } from "../ItemCount/ItemCount";
+import { useNavigate } from "react-router-dom";
 
 export const ItemDetail = ({
     id,
@@ -10,6 +11,13 @@ export const ItemDetail = ({
     imagen,
     categoria,
 }) => {
+    
+    const navigate = useNavigate()
+
+    const volverHaciaAtras = () => {
+        navigate(-1)
+    }
+    
     return (
         <div className="item">
             <Card border="info" style={{ width: "24rem" }}>
@@ -29,6 +37,7 @@ export const ItemDetail = ({
                     <br />
                     <Button variant="primary">Agregar al carrito</Button>
                 </Card.Body>
+                <Button onClick={volverHaciaAtras} className='btn btn-sucess'>Volver atras</Button>
             </Card>
         </div>
     );
