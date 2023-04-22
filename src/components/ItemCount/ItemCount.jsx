@@ -19,7 +19,7 @@ export const ItemCount = () => {
 
     return (
         <>
-            <h5>Cantidad: {counter}</h5>
+            <h5>{counter}</h5>
             <div>
                 <Button className="btn" variant="primary" onClick={sumar}>
                     +
