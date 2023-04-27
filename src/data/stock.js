@@ -5,7 +5,8 @@ export const stock = [
         descripcion: "Linea Premium Plus",
         precio: "40.000 COP",
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/alimentos/brdog.png?raw=true",
-        categoria:"Alimentos y Snacks"
+        categoria:"Alimentos y Snacks",
+        stock: 20
     },   
     {
         id: 2,
@@ -13,7 +14,8 @@ export const stock = [
         descripcion: "Carne en salsa",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/alimentos/felix.png?raw=true",
-        categoria: "Alimentos y Snacks"
+        categoria: "Alimentos y Snacks",
+        stock: 20                
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const stock = [
         descripcion: "Cuidado oral diario",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/alimentos/pedigree.jpg?raw=true",
-        categoria: "Alimentos y Snacks"
+        categoria: "Alimentos y Snacks",
+        stock: 20
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const stock = [
         descripcion: "Snacks sabor salmón y arandanos",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/alimentos/snack-para-gato-fruitables-salmon-y-arandanos-front.png?raw=true",
-        categoria: "Alimentos y Snacks"
+        categoria: "Alimentos y Snacks",
+        stock: 20
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const stock = [
         descripcion: "Cuidado Oral",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/AccesorioMascotas.jpg?raw=true",
-        categoria: "Higuiene y Belleza"
+        categoria: "Higuiene y Belleza",
+        stock: 20
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const stock = [
         descripcion: "Cepillo removedor de pelo",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillo%20gato.jpg?raw=true",
-        categoria: "Higuiene y Belleza"
+        categoria: "Higuiene y Belleza",
+        stock: 20
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const stock = [
         descripcion: "Cepillo removedor de pelo",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillo%20perro.jpg?raw=true",
-        categoria: "Higuiene y Belleza"
+        categoria: "Higuiene y Belleza",
+        stock: 20
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const stock = [
         descripcion: "Pasta de dientes/cuidado dental",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillodental.jpg?raw=true",
-        categoria: "Higuiene y Belleza"
+        categoria: "Higuiene y Belleza",
+        stock: 20
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ export const stock = [
         descripcion: "Variedad de juguetes",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/juguetes/juguete%20gato1.jpg?raw=true",
-        categoria: "Juguetes y Entretenimiento"
+        categoria: "Juguetes y Entretenimiento",
+        stock: 20
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ export const stock = [
         descripcion: "Variedad de juguetes",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/juguetes/juguete%20gato2.jpg?raw=true",
-        categoria: "Juguetes y Entretenimiento"
+        categoria: "Juguetes y Entretenimiento",
+        stock: 20
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ export const stock = [
         descripcion: "Variedad de juguetes",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/juguetes/juguete%20perro1.jpg?raw=true",
-        categoria: "Juguetes y Entretenimiento"
+        categoria: "Juguetes y Entretenimiento",
+        stock: 20
     },
     {
         id: 12,
@@ -93,7 +104,8 @@ export const stock = [
         descripcion: "Variedad de juguetes",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/juguetes/juguete%20perro2.jpg?raw=true",
-        categoria: "Juguetes y Entretenimiento"
+        categoria: "Juguetes y Entretenimiento",
+        stock: 20
     },
     {
         id: 13,
@@ -101,7 +113,8 @@ export const stock = [
         descripcion: "Cama iglu",
         precio: "40.000 COP", 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/camas/cama%20g1.jpg?raw=true",
-        categoria: "Camas y Estar"
+        categoria: "Camas y Estar",
+        stock: 20
     },
     {
         id: 14,
@@ -109,7 +122,8 @@ export const stock = [
         descripcion: "Hamaca gato",
         precio: "40.000 COP",
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/camas/cama%20g2.jpg?raw=true",
-        categoria: "Camas y Estar"
+        categoria: "Camas y Estar",
+        stock: 20
     },
     {
         id: 15,
@@ -117,7 +131,8 @@ export const stock = [
         descripcion: "Cama Soft / Varios colores", 
         precio: "40.000 COP",      
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/camas/cama%20p1.jpg?raw=true",
-        categoria: "Camas y Estar"
+        categoria: "Camas y Estar",
+        stock: 20
     },
     {
         id: 16,
@@ -125,6 +140,7 @@ export const stock = [
         descripcion: "Cama para perros pequeños",
         precio: "40.000 COP",
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/camas/cama%20p2.jpg?raw=true",
-        categoria: "Camas y Estar"
+        categoria: "Camas y Estar",
+        stock: 20
     }  
 ];
