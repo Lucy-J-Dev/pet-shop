@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { CgShoppingCart } from "react-icons/cg";
+import { CartContext } from "../context/CartContext";
 
 export const CartWidget = () => {
+    const { calcularCantidad } = useContext(CartContext);
+
     return (
         <button
             type="button"
@@ -9,7 +12,7 @@ export const CartWidget = () => {
         >
             <CgShoppingCart />
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                1
+                {calcularCantidad()}
             </span>
         </button>
     );
