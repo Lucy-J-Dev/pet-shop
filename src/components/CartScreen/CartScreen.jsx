@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { BsFillTrash3Fill } from "react-icons/bs";
 import { CartContext } from "../context/CartContext";
+import "./CartScreen.css"
 
 export const CartScreen = () => {
     const { carrito, precioTotal, removerItem, vaciarCarrito } =
