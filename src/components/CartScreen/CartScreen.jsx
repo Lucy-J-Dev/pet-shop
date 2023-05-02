@@ -1,20 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
 import { BsFillTrash3Fill } from "react-icons/bs";
+import { CartContext } from "../context/CartContext";
 
 export const CartScreen = () => {
+    const { carrito, precioTotal, removerItem } = useContext(CartContext);
+
     return (
-        <div className="containe my-5">
-            <h3>Resumen de Compras</h3>
+        <div className="container">
+            {carrito.map((prod) => (
+                <>
+                    <div className="listado">
+                        <p>Productos: {prod.descripcion}</p>
+                        <p>$ {prod.precio}</p>
+                        <p>Cantidad: {prod.counter}</p>
+                    </div>
+                    <Button
+                        className="btn btn-primary"
+                        onClick={() => removerItem(prod.id)}
+                    >
+                        <BsFillTrash3Fill />
+                    </Button>
+                </>
+            ))}
             <hr />
-            <div className="listado">
-                <p>Productos</p>
-                <p>$</p>
-                <p>Cantidad: </p>
-                <Button className="btn btn-danger">
-                    <BsFillTrash3Fill />
-                </Button>
-            </div>
+            <strong>Precio total: ${precioTotal()}</strong>
         </div>
     );
 };
