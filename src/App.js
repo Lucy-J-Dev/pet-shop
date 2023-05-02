@@ -36,11 +36,14 @@ function App() {
     const removerItem = (itemId) => {
         const newCart = carrito.filter((prod) => prod.id !== itemId)
         setCarrito(newCart) 
+    };
 
+    const vaciarCarrito = () =>{
+        setCarrito([])
     }
 
     return (
-        <CartContext.Provider value={{ addToCart, calcularCantidad, precioTotal, removerItem, carrito }}>
+        <CartContext.Provider value={{ addToCart, calcularCantidad, precioTotal, removerItem, carrito, vaciarCarrito}}>
             <div className="App">
                 <Router>
                     <NavBar />
