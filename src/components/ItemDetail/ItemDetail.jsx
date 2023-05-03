@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Card, Button } from "react-bootstrap";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { CartContext } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
 export const ItemDetail = ({
     id,
@@ -63,6 +64,9 @@ export const ItemDetail = ({
                 <Button onClick={volverHaciaAtras} className="btn btn-sucess">
                     Volver atras
                 </Button>
+                <Link to='/cart' className='btn btn-info'>
+                    Ir al carrito
+                </Link>
             </Card>
         </div>
     );

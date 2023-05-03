@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { CartProvider } from "./components/context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
+import { Checkout } from "./components/Checkout/Checkout";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                             element={<ItemDetailContainer />}
                         />
                         <Route path="/counter" element={<ItemCount />} />
+                        <Route path="/checkout" element={<Checkout />} />
                         <Route path="/cart" element={<CartScreen />} />
                         <Route path="*" element={<Navigate to="/" />} />
                     </Routes>

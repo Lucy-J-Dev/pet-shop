@@ -16,7 +16,8 @@ export const CartScreen = () => {
                     <h3>Carrito vacio</h3>
                     <hr />
                     <Link to="/" className="btn btn-primary">
-                        Volver a comprar</Link>
+                        Volver a comprar
+                    </Link>
                 </>
             ) : (
                 <>
@@ -43,6 +44,7 @@ export const CartScreen = () => {
                     <Button className="btn btn-primary" onClick={vaciarCarrito}>
                         Vaciar Carrito
                     </Button>
+                    <Link className="btn btn-info"to='/checkout' >Terminar compra</Link>
                 </>
             )}
         </div>
