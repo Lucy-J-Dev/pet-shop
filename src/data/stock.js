@@ -41,7 +41,7 @@ export const stock = [
         descripcion: "Cuidado Oral",
         precio: 32000, 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/AccesorioMascotas.jpg?raw=true",
-        categoria: "Higuiene y Belleza",
+        categoria: "Higiene y Belleza",
         stock: 20
     },
     {
@@ -50,7 +50,7 @@ export const stock = [
         descripcion: "Cepillo removedor de pelo",
         precio: 15000, 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillo%20gato.jpg?raw=true",
-        categoria: "Higuiene y Belleza",
+        categoria: "Higiene y Belleza",
         stock: 20
     },
     {
@@ -59,7 +59,7 @@ export const stock = [
         descripcion: "Cepillo removedor de pelo",
         precio: 15000, 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillo%20perro.jpg?raw=true",
-        categoria: "Higuiene y Belleza",
+        categoria: "Higiene y Belleza",
         stock: 20
     },
     {
@@ -68,7 +68,7 @@ export const stock = [
         descripcion: "Pasta de dientes/cuidado dental",
         precio: 26000, 
         imagen: "https://github.com/Lucyjim07/PF-Jimenez-Mejia/blob/main/img/img%20productos/higuiene/cepillodental.jpg?raw=true",
-        categoria: "Higuiene y Belleza",
+        categoria: "Higiene y Belleza",
         stock: 20
     },
     {
