@@ -43,7 +43,7 @@ export const ItemDetail = ({
             <Card border="info" style={{ width: "24rem" }}>
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
-                    {/* <Card.Title>{id}</Card.Title> */}
+                    {<Card.Title>{id}</Card.Title>}
                     <Card.Title>{marca}</Card.Title>
                     <Card.Title>{descripcion}</Card.Title>
                     <p>
