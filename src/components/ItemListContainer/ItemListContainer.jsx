@@ -30,22 +30,22 @@ export const ItemListContainer = () => {
         setLoading(true);
         const db = getFirestore();
 
-        const productosPetShop = db.collection("Productos Pet Shop");
+        const productosPetShop = categoryId
+            ? db.collection("Productos Pet Shop").where("categoria", "==", categoryId)
+            : db.collection("Productos Pet Shop");
 
-        productosPetShop
-            .get()
+        productosPetShop.get()
             .then((res) => {
                 const newItem = res.docs.map((doc) => {
                     return { id: doc.id, ...doc.data() };
                 });
-                console.table(newItem);
                 setItems(newItem);
             })
             .catch((error) => console.log(error))
             .finally(() => {
                 setLoading(false);
             });
-    }, [categoryId]);
+    }, [categoryId, setLoading]);
 
     return (
         <>

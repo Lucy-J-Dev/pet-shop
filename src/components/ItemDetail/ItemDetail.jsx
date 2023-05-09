@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 export const ItemDetail = ({
     id,
+    nombre,
     marca,
     descripcion,
     precio,
@@ -27,6 +28,7 @@ export const ItemDetail = ({
     const sumarAlCarrito = () => {
         const newItem = {
             id,
+            nombre,
             marca,
             descripcion,
             precio,
@@ -43,7 +45,7 @@ export const ItemDetail = ({
             <Card border="info" style={{ width: "24rem" }}>
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
-                    {<Card.Title>{id}</Card.Title>}
+                    {<Card.Title>{nombre}</Card.Title>}
                     <Card.Title>{marca}</Card.Title>
                     <Card.Title>{descripcion}</Card.Title>
                     <p>

@@ -25,8 +25,8 @@ export const NavBar = () => {
             <Link className="link" to="/productos/Alimentos y Snacks">
                 Alimentos y Snacks
             </Link>
-            <Link className="link" to="/productos/Higuiene y Belleza">
-                Higuiene y Belleza
+            <Link className="link" to="/productos/Higiene y Belleza">
+                Higiene y Belleza
             </Link>
             <Link className="link" to="/productos/Juguetes y Entretenimiento">
                 Juguetes y Entretenimiento
