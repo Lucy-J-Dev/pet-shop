@@ -4,6 +4,7 @@ import { Card, Button } from "react-bootstrap";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { CartContext } from "../context/CartContext";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 export const ItemDetail = ({
     id,
@@ -38,6 +39,13 @@ export const ItemDetail = ({
         };
         console.log(newItem);
         addToCart(newItem);
+        Swal.fire({
+            icon: 'success',
+            title: 'Producto agregado al carrito',
+            showConfirmButton: false,
+            timer: 1000
+          })
+
     };
 
     return (
