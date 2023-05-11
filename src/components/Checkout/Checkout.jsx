@@ -59,12 +59,12 @@ export const Checkout = () => {
             });
 
         carrito.forEach((item) => {
-            const docRef = db.collection('prodcutos Pet shop').doc(item.id);
+            const docRef = db.collection('Productos Pet Shop').doc(item.id);
 
             docRef.get()
             .then((doc) => {
                 docRef.update({
-                    stock: doc.data().stock -item.counter
+                    stock: doc.data().stock - item.counter
                 });
             });
         });

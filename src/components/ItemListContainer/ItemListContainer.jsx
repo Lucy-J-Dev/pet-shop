@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Spinner from "react-bootstrap/Spinner";
-// import { pedirProductos } from "../../helpers/pedirProductos";
 import { getFirestore } from "../../firebase/config";
 import { ItemList } from "../ItemList/ItemList";
 import "./ItemListContainer.css";
@@ -10,19 +9,6 @@ export const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
     const [loading, setLoading] = useState(false);
-
-    // setLoading(true);
-    // pedirProductos()
-    // .then((res) => {
-    //     const products = categoryId
-    //         ? res.filter((product) => product.categoria === categoryId)
-    //         : res;
-    //     setItems(products);
-    // })
-    // .catch((error) => console.log(error))
-    // .finally(() => {
-    //     setLoading(false);
-    // });
 
     const { categoryId } = useParams();
 

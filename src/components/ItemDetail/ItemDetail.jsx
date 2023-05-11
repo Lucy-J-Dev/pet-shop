@@ -37,7 +37,6 @@ export const ItemDetail = ({
             categoria,
             counter,
         };
-        console.log(newItem);
         addToCart(newItem);
         Swal.fire({
             icon: 'success',
