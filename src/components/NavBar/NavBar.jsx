@@ -17,27 +17,29 @@ export const NavBar = () => {
                     <h2 className="logo logo-espacio">PetShop</h2>
                     <span className="estilo-marca-logo">cuidados con amor</span>
                 </div>
-            </div>
-
-            <Link className="link" to="/">
-                Inicio
-            </Link>
-            <Link className="link" to="/productos/Alimentos y Snacks">
-                Alimentos y Snacks
-            </Link>
-            <Link className="link" to="/productos/Higiene y Belleza">
-                Higiene y Belleza
-            </Link>
-            <Link className="link" to="/productos/Juguetes y Entretenimiento">
-                Juguetes y Entretenimiento
-            </Link>
-            <Link className="link" to="/productos/Camas y Estar">
-                Camas y Estar
-            </Link>
-            {/* <Link to="/counter">Contador</Link> */}
-            <Link className="link" to="/cart">
-                <CartWidget />
-            </Link>
+            </div>           
+                <Link className="link" to="/">
+                    Inicio
+                </Link>
+                <Link className="link" to="/productos/Alimentos y Snacks">
+                    Alimentos y Snacks
+                </Link>
+                <Link className="link" to="/productos/Higiene y Belleza">
+                    Higiene y Belleza
+                </Link>
+                <Link
+                    className="link"
+                    to="/productos/Juguetes y Entretenimiento"
+                >
+                    Juguetes y Entretenimiento
+                </Link>
+                <Link className="link" to="/productos/Camas y Estar">
+                    Camas y Estar
+                </Link>
+                {/* <Link to="/counter">Contador</Link> */}
+                <Link className="link" to="/cart">
+                    <CartWidget />
+                </Link>           
         </nav>
     );
 };
