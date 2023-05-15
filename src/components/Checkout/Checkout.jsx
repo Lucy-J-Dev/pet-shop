@@ -10,20 +10,12 @@ export const Checkout = () => {
     const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
 
     const [email, setEmail] = useState("");
-
     const [nombre, setNombre] = useState("");
-
     const [apellido, setApellido] = useState("");
-
     const [telefono, setTelefono] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log("Email:", email);
-        console.log("Nombre:", nombre);
-        console.log("Apellido:", apellido);
-        console.log("Teléfono:", telefono);
 
         const orden = {
             buyer: {
@@ -39,34 +31,32 @@ export const Checkout = () => {
         console.log(orden);
 
         const db = getFirestore();
-
         const ordenes = db.collection("ordenes");
 
         ordenes
             .add(orden)
             .then((res) => {
+                vaciarCarrito();
+
                 Swal.fire({
                     icon: "success",
                     title: "Su compra se realizo con éxito",
                     text: `Guarde su número de compra: ${res.id}`,
-                    willClose: () => {
-                        vaciarCarrito();
-                    },
                 });
             })
-            .finally(() => {
-                console.log("Operación realizada con exito");
-            });
+            .catch((error) => console.log(error))
+            .finally(() => console.log("Operación finalizada"));
 
         carrito.forEach((item) => {
             const docRef = db.collection('Productos Pet Shop').doc(item.id);
 
             docRef.get()
-            .then((doc) => {
-                docRef.update({
-                    stock: doc.data().stock - item.counter
-                });
-            });
+                .then((doc) => {
+                    docRef.update({
+                        stock: doc.data().stock - item.counter
+                    });
+                })
+                .catch((error) => console.log(error));
         });
     };
 

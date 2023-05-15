@@ -16,16 +16,12 @@ export const ItemDetail = ({
     categoria,
     stock,
 }) => {
+
     const navigate = useNavigate();
-
-    const volverHaciaAtras = () => {
-        navigate(-1);
-    };
-
+    const [counter, setCounter] = useState(1);
     const { addToCart } = useContext(CartContext)
 
-    const [counter, setCounter] = useState(1);
-
+    const volverHaciaAtras = () => navigate(-1);
     const sumarAlCarrito = () => {
         const newItem = {
             id,
@@ -44,7 +40,6 @@ export const ItemDetail = ({
             showConfirmButton: false,
             timer: 1000
           })
-
     };
 
     return (
@@ -52,7 +47,7 @@ export const ItemDetail = ({
             <Card border="info" style={{ width: "24rem" }}>
                 <Card.Img variant="top" src={imagen} />
                 <Card.Body>
-                    {<Card.Title>{nombre}</Card.Title>}
+                    <Card.Title>{nombre}</Card.Title>
                     <Card.Title>{marca}</Card.Title>
                     <Card.Title>{descripcion}</Card.Title>
                     <p>
