@@ -14,3 +14,16 @@
 3. Gif de la pagina Web
 
 ![Gif de Pagina Web](./assets/PreEntrega2Jimenez.gif)
+
+# Entregan Final de Proyecto React.
+
+1. En esta entrega se da a conocer los componentes: 
+
+*Navbar*, *CartWidget*, *ItemListContainer*, *ItemList*, *ItemDetailContainer*, *ItemDetail* y *Checkout*
+
+2. Gif de la pagina Web
+
+![Gif de Pagina Web](./assets/EntregaFinalJimenez.gif)
+
+
+
